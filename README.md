@@ -24,7 +24,7 @@
 
 - Video Player -> used way with pre-existing player, without add <script> in html
                   used method .on to add an event listener (timeupdate)
-                  saved timeupdate in localStorage, data is JSON.stringify
+                  saved timeupdate in localStorage
 - lodash ->       timeupdates every one second 
 
 
