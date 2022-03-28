@@ -28,7 +28,7 @@
 - lodash ->       timeupdates every one second 
 
 
-  ## Project nr 3
+## Project nr 3
 
 
 
