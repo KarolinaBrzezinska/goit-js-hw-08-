@@ -21,10 +21,8 @@
 ### What I did
 - install API npm
 
-- Video Player -> used way with pre-existing player, without add <script> in html
-                  used method .on to add an event listener (timeupdate)
-                  saved timeupdate in localStorage
-- lodash ->       timeupdates every one second 
+- Video Player -> used way with pre-existing player, without add <script> in html, used method .on to add an event listener (timeupdate), saved timeupdate in localStorage
+- lodash -> timeupdates every one second 
 
 
 ## Project nr 3
