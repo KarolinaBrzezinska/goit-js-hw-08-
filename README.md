@@ -25,7 +25,7 @@
 - lodash -> timeupdates every one second 
 
 
-## Project nr 3 - :pencil: - using Locale Storage to save user submitted information
+## Project nr 3 - :pencil: - using Locale Storage to save text entered by User
 
 
 
