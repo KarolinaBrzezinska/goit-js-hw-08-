@@ -13,7 +13,7 @@
 
 
 ## Project nr 2
-:film_strip: - if you reload a website, the video will resume from the time you stopped watching
+:film_strip: - If you reload a website, the video will resume from the time you stopped watching
 
 ### API
 - lodash
