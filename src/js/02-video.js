@@ -11,25 +11,26 @@ player.getVideoTitle().then(function (title) {
   console.log('title:', title);
 });
 
-const timeUpdater = data => {
+function saveCurrentTimeToLocaleStorage(data) {
   localStorage.setItem('videoplayer-current-time', JSON.stringify(data.seconds));
-};
+}
 
-const lastTime = localStorage.getItem('videoplayer-current-time');
-const parsedLastTime = JSON.parse(lastTime);
+player.on('timeupdate', throttle((saveCurrentTimeToLocaleStorage), 1000));
 
-player.on('timeupdate', throttle(timeUpdater, 1000));
+const getCurrentVideoTimeFromLocaleStorage = localStorage.getItem('videoplayer-current-time');
 
-player
-  .setCurrentTime(parsedLastTime)
-  .then(function (seconds) {
-  })
-  .catch(function (error) {
-    switch (error.name) {
+console.log(getCurrentVideoTimeFromLocaleStorage);
+
+
+player.setCurrentTime(getCurrentVideoTimeFromLocaleStorage).then(function(seconds) {
+}).catch(function(error) {
+  switch (error.name) {
       case 'RangeError':
-        break;
+          break;
 
       default:
-        break;
-    }
-  });
+          break;
+  }
+});
+
+
