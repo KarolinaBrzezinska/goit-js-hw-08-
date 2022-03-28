@@ -1,8 +1,8 @@
 # goit-js-hw-08
 
-## Project nr 1
+## Project nr 1 - :framed_picture: - Photo Gallery added by JavaScript
 
-:framed_picture: - Photo Gallery added by JavaScript
+
 
 - photos have been added as a link to http://cdn.pixabay.com
 - gallery-items.js contains JavaScript Array with the details of the displayed images
@@ -12,8 +12,7 @@
 - Used three JavaScript Options from SimpleLightbox - add caption (captionData, captionSelecor) and delay before the caption shows
 
 
-## Project nr 2
-:film_strip: - If you reload a website, the video will resume from the time you stopped watching
+## Project nr 2 - :film_strip: - If you reload a website, the video will resume from the time you stopped watching
 
 ### API
 - lodash
