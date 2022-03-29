@@ -15,22 +15,8 @@ function saveCurrentTimeToLocaleStorage(data) {
   localStorage.setItem('videoplayer-current-time', JSON.stringify(data.seconds));
 }
 
-player.on('timeupdate', throttle((saveCurrentTimeToLocaleStorage), 1000));
+player.on('timeupdate', throttle(saveCurrentTimeToLocaleStorage, 1000));
 
 const getCurrentVideoTimeFromLocaleStorage = localStorage.getItem('videoplayer-current-time');
 
-console.log(getCurrentVideoTimeFromLocaleStorage);
-
-
-player.setCurrentTime(getCurrentVideoTimeFromLocaleStorage).then(function(seconds) {
-}).catch(function(error) {
-  switch (error.name) {
-      case 'RangeError':
-          break;
-
-      default:
-          break;
-  }
-});
-
-
+player.setCurrentTime(getCurrentVideoTimeFromLocaleStorage);
